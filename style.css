@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+.profile, .portfolio, .contact {
+    position: absolute;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.profile.active, .portfolio.active, .contact.active {
+    opacity: 1;
+}
+.slide-in {
+    position: relative;
+    animation: slideIn 1s forwards;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid gold;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: gold;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+#github-projects {
+    margin-top: 20px;
+    text-align: left;
+}
+.project {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.project h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+.project p {
+    margin: 5px 0 0;
+}
+.project a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+a {
+    color: pink;
+  }
