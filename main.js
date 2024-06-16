@@ -2,7 +2,7 @@ const sections = document.querySelectorAll('.section');
 let options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0.1  // 增加靈敏度
 };
 
 let observer = new IntersectionObserver((entries, observer) => {
