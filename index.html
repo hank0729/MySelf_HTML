@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Hank's World</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="section" id="profile-section">
         <div class="background"></div>
-        <div class="profile">
-            <h1 class="slide-in">Welcome to My Personal Website</h1>
-            <p class="slide-in">直率無畏，開朗活潑，以浪漫姿態迎接每一天的挑戰。</p>
+        <div class="profile active">
+            <h1 class="slide-in" id="title_h1">Discover My World</h1>
+            <p class="slide-in" id="title_p">直率無畏，開朗活潑，以浪漫姿態迎接每一天的挑戰。</p>
         </div>
     </div>
     <div class="section" id="portfolio-section">
         <div class="background"></div>
         <div class="portfolio">
-            <h1 class="slide-in">My Portfolio</h1>
-            <p class="slide-in">Check out some of my works below.</p>
-            <div id="github-projects" class="slide-in"></div>
+            <h1 class="slide-in" id="list1_h1">My Portfolio</h1>
+            <p class="slide-in" id="list1_p">快來瞧瞧我的傑作，保證讓你眼前一亮！</p>
+            <div id="github-projects" class="slide-in"></div><br><br><br><br>
+            <div id="fire-container"></div> 
         </div>
     </div>
+    
+    <div class="section" id="awards-section">
+        <div class="background"></div>
+        <div class="awards">
+            <h1 class="slide-in" id="awards_h1">My Awards</h1>
+            <p class="slide-in" id="awards_p">來看看我這些閃閃發光的戰利品吧！</p>
+            <ul class="slide-in" id="awards_list">
+                <li>2024 年全國高級中等學校專業群科113年專題實作及創意競賽 <span id="winner">佳作</span></li><br>
+                <li>第28屆大專院校資訊應用服務創新競賽 <span id="winner">第二名</span></li><br>
+                <li>2024 綠色生活創意設計大賽 <span id="winner">第二名</span></li><br>
+                <li>2024年第20屆全國電子設計創意競賽 <span id="winner">第一名</span></li><br>
+                <li>萬潤2024創新創意競賽 <span id="winner">佳作</span></li><br>
+            </ul>
+        </div>
+    </div>
+
     <div class="section" id="contact-section">
         <div class="background"></div>
         <div class="contact">
             <h1 class="slide-in">Contact Me</h1>
-            <p class="slide-in">Follow me on <a href="https://www.instagram.com/han_h0729">Instagram</a></p>
-            <p class="slide-in"><img src="qr.jpg" alt="Line QR Code" width="100%" height="auto"></p>
+
+            <p class="slide-in"><img src="qr.jpg" alt="Line QR Code" width="250px" height="auto"></p>
+            <p class="slide-in">
+                <a href="https://www.instagram.com/han_h0729">
+                    <img src="IG.png" alt="Instagram" class="social-icon" width="250px" height="250px">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100007528993403">
+                    <img src="FB.png" alt="Facebook" class="social-icon" width="230px" height="230px">
+                </a>
+            </p>
         </div>
     </div>
     <div class="circle" id="circle"></div>
