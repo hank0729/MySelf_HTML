@@ -272,3 +272,18 @@ li {
         font-weight: bold;
     }
 }
+@keyframes colorChange {
+    0% {
+        color: silver;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: silver;
+    }
+}
+
+#title_h1, #title_p {
+    animation: colorChange 4s infinite;
+}
