@@ -240,7 +240,9 @@ a {
     #awards_p {
         font-size: 16px;
     }
-
+span{
+    color:gold;
+}
     li {
         font-size: 17px;
         color: #00a4e4;
