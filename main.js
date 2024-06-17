@@ -11,6 +11,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function getRandomColor() {
+    const colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#33FFF3'];
+    return colors[Math.floor(Math.random() * colors.length)];
+}
+
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -69,6 +74,7 @@ function createSnowflake() {
     snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
     snowflake.style.opacity = Math.random();
     snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+    snowflake.style.backgroundColor = getRandomColor(); // 设置随机颜色
     document.body.appendChild(snowflake);
 
     setTimeout(() => {
