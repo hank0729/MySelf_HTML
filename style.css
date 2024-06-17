@@ -166,7 +166,7 @@ a {
 
 #title_h1 {
     font-size: 70px;
-    background: linear-gradient(90deg, #E0E0E0, 	#D0D0D0, 	#E0E0E0);
+    background: linear-gradient(90deg, #FFFFDF, 	#D0D0D0, 	#FFFFDF);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
