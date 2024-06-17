@@ -284,9 +284,9 @@ li {
 }
 
 #title_h1, #title_p {
-    background: linear-gradient(90deg, #272727, white, #272727);
+    background: linear-gradient(90deg, #1a1a1a, white, #1a1a1a); 
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 4s infinite;
+    animation: gradientAnimation 8s infinite; 
 }
