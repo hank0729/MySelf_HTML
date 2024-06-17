@@ -283,7 +283,7 @@ li {
     }
 }
 
-#title_h1, #title_p {
+#title_h1 {
     background: linear-gradient(90deg, #1a1a1a, white, #1a1a1a); 
     background-size: 200% 200%;
     -webkit-background-clip: text;
