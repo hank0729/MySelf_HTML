@@ -166,11 +166,11 @@ a {
 
 #title_h1 {
     font-size: 70px;
-    background: linear-gradient(90deg, #CCCCCC, #333333, #CCCCCC); /* 使用浅银色到深银色的渐变 */
+    background: linear-gradient(90deg, #8E8E8E, #6C6C6C, 	#8E8E8E);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 15s infinite; /* 动画速度调慢到15秒 */
+    animation: gradientAnimation 15s infinite; 
 }
 
 @keyframes gradientAnimation {
