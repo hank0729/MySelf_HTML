@@ -272,18 +272,22 @@ li {
         font-weight: bold;
     }
 }
-@keyframes colorChange {
+/* 其他CSS代码保持不变 */
+
+@keyframes gradientAnimation {
     0% {
-        color: silver;
-    }
-    50% {
-        color: white;
+        background-position: 200% 0%;
     }
     100% {
-        color: silver;
+        background-position: -200% 0%;
     }
 }
 
 #title_h1, #title_p {
-    animation: colorChange 4s infinite;
+    background: linear-gradient(90deg, silver, white, silver);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 4s infinite;
 }
+
