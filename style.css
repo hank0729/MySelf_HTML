@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -66,11 +67,14 @@ body, html {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-150vh); 
+        transform: translateY(-150vh);
     }
 }
 
-.profile, .portfolio, .contact, .awards {
+.profile,
+.portfolio,
+.contact,
+.awards {
     position: absolute;
     width: 80%;
     max-width: 1000px;
@@ -79,7 +83,10 @@ body, html {
     transition: opacity 1s ease-in-out;
 }
 
-.profile.active, .portfolio.active, .contact.active, .awards.active {
+.profile.active,
+.portfolio.active,
+.contact.active,
+.awards.active {
     opacity: 1;
 }
 
@@ -120,15 +127,15 @@ body, html {
 #github-projects {
     margin-top: 20px;
     text-align: left;
-    position: relative; /* 新增 */
+    position: relative;
 }
 
-#fire-container { /* 新增 */
+#fire-container {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 600px; 
+    height: 200px;
     overflow: hidden;
 }
 
@@ -182,70 +189,90 @@ a {
     font-size: 1.2em;
 }
 
+li {
+    color: aquamarine;
+    font-weight: bold;
+}
+
+#winner {
+    color: gold;
+    font-weight: bold;
+}
+
+
 /* Responsive Styles */
+
 @media (max-width: 768px) {
-    .profile, .portfolio, .contact, .awards {
+    .profile,
+    .portfolio,
+    .contact,
+    .awards {
         width: 80%;
     }
-
     .circle {
         width: 30px;
         height: 30px;
         border: 2px solid gold;
     }
-
     .dot {
         width: 6px;
         height: 6px;
     }
-
     .project h3 {
         font-size: 1em;
     }
 }
 
 @media (max-width: 480px) {
-    .profile, .portfolio, .contact, .awards {
+    .profile,
+    .portfolio,
+    .contact,
+    .awards {
         width: 80%;
     }
-
     .circle {
         display: none;
     }
-
     .dot {
         display: none;
     }
-
     #title_h1 {
         font-size: 50px;
     }
-
     #title_p {
         font-size: 20px;
     }
-
     #list1_h1 {
         font-size: 50px;
     }
-
     #list1_p {
         font-size: 16px;
     }
-
     #awards_h1 {
         font-size: 50px;
     }
-
     #awards_p {
         font-size: 16px;
     }
-    #winner{
-    color:gold;
-}
     li {
         font-size: 17px;
         color: #00a4e4;
         font-weight: bold;
     }
+}
+
+#list1_h1 {
+    font-size: 70px;
+}
+
+#list1_p {
+    font-size: 23px;
+}
+
+#awards_h1 {
+    font-size: 70px;
+}
+
+#awards_p {
+    font-size: 23px;
 }

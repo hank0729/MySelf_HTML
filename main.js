@@ -12,7 +12,7 @@ function getRandomInt(min, max) {
 }
 
 function getRandomColor() {
-    const colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#33FFF3'];
+    const colors = ['#FFD9EC', '#E6CAFF', '	#BBFFFF', '#FFF4C1', '#FFCBB3'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
@@ -46,7 +46,7 @@ document.addEventListener('mousemove', function(e) {
     dot.style.top = e.pageY + 'px';
 });
 
-const githubUsername = 'HankLin0729'; 
+const githubUsername = 'HankLin0729';
 const githubProjectsContainer = document.getElementById('github-projects');
 
 fetch(`https://api.github.com/users/${githubUsername}/repos`)
@@ -74,7 +74,7 @@ function createSnowflake() {
     snowflake.style.animationDuration = Math.random() * 3 + 2 + 's';
     snowflake.style.opacity = Math.random();
     snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
-    snowflake.style.backgroundColor = getRandomColor(); // 设置随机颜色
+    snowflake.style.backgroundColor = getRandomColor();
     document.body.appendChild(snowflake);
 
     setTimeout(() => {
