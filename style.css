@@ -272,7 +272,7 @@ li {
         font-weight: bold;
     }
 }
-/* 其他CSS代码保持不变 */
+
 
 @keyframes gradientAnimation {
     0% {
@@ -284,10 +284,9 @@ li {
 }
 
 #title_h1, #title_p {
-    background: linear-gradient(90deg, silver, white, silver);
+    background: linear-gradient(90deg, #C0C0C0, white, #C0C0C0); 
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientAnimation 4s infinite;
 }
-
