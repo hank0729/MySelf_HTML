@@ -166,10 +166,20 @@ a {
 
 #title_h1 {
     font-size: 70px;
+    background: linear-gradient(90deg, #CCCCCC, #333333, #CCCCCC); /* 使用浅银色到深银色的渐变 */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 15s infinite; /* 动画速度调慢到15秒 */
 }
 
-#title_p {
-    font-size: 30px;
+@keyframes gradientAnimation {
+    0% {
+        background-position: 200% 0%;
+    }
+    100% {
+        background-position: -200% 0%;
+    }
 }
 
 .social-icon {
@@ -214,7 +224,6 @@ li {
 #awards_p {
     font-size: 23px;
 }
-
 
 /* Responsive Styles */
 
@@ -271,22 +280,4 @@ li {
         color: aquamarine;
         font-weight: bold;
     }
-}
-
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 200% 0%;
-    }
-    100% {
-        background-position: -200% 0%;
-    }
-}
-
-#title_h1 {
-    background: linear-gradient(90deg, #333333, white, #333333); 
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 15s infinite; 
 }
