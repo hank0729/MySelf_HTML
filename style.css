@@ -36,7 +36,6 @@ body, html {
     top: -10px;
     width: 10px;
     height: 10px;
-    background-color: white;
     border-radius: 50%;
     opacity: 0.8;
     animation: fall linear infinite;
@@ -121,10 +120,10 @@ body, html {
 #github-projects {
     margin-top: 20px;
     text-align: left;
-    position: relative; 
+    position: relative; /* 新增 */
 }
 
-#fire-container { 
+#fire-container { /* 新增 */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -183,33 +182,7 @@ a {
     font-size: 1.2em;
 }
 
-#list1_h1 {
-    font-size: 70px;
-}
-
-#list1_p {
-    font-size: 23px;
-}
-
-li {
-    font-size: 30px;
-    color: #00a4e4;
-    font-weight: bold;
-}
-
-#awards_h1 {
-    font-size: 70px;
-}
-
-#awards_p {
-    font-size: 25px;
-}
-
-#winner {
-    color: #fbb034;
-    font-weight: bold;
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
     .profile, .portfolio, .contact, .awards {
         width: 80%;
@@ -251,24 +224,26 @@ li {
     #title_p {
         font-size: 20px;
     }
+
     #list1_h1 {
         font-size: 50px;
     }
-    
+
     #list1_p {
         font-size: 16px;
     }
+
     #awards_h1 {
         font-size: 50px;
     }
-    
+
     #awards_p {
         font-size: 16px;
     }
+
     li {
         font-size: 17px;
         color: #00a4e4;
         font-weight: bold;
     }
-    
 }
