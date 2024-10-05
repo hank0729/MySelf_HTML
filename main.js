@@ -1,5 +1,3 @@
-const a = 0;
-
 const sections = document.querySelectorAll('.section');
 let options = {
     root: null,
@@ -48,10 +46,10 @@ document.addEventListener('mousemove', function(e) {
     dot.style.top = e.pageY + 'px';
 });
 
-const githubUsername = 'Hank-Lin0729';
+// const githubUsername = 'Hank-Lin0729';
 const githubProjectsContainer = document.getElementById('github-projects');
 
-fetch(`https://api.github.com/users/${githubUsername}/repos`)
+fetch(`https://api.github.com/users/Hank-Lin0729/repos`)
     .then(response => response.json())
     .then(repos => {
         repos.forEach(repo => {
