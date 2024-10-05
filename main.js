@@ -1,3 +1,5 @@
+const a = 0;
+
 const sections = document.querySelectorAll('.section');
 let options = {
     root: null,
@@ -120,3 +122,5 @@ function stopFireflakes() {
     clearInterval(fireflakeInterval);
     fireflakeInterval = null;
 }
+
+
