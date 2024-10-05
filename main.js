@@ -46,7 +46,7 @@ document.addEventListener('mousemove', function(e) {
     dot.style.top = e.pageY + 'px';
 });
 
-const githubUsername = 'HankLin0729';
+const githubUsername = 'Hank-Lin0729';
 const githubProjectsContainer = document.getElementById('github-projects');
 
 fetch(`https://api.github.com/users/${githubUsername}/repos`)
